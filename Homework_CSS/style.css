@@ -1,0 +1,128 @@
+body {
+  position: relative;
+  background-color: F6F2F2;
+  color: white;
+  z-index: 0; /* для контекста наложения */
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #F6F2F2;
+}
+
+.nav {
+    background-color: rgb(39, 39, 39);
+    padding: 0 30px;
+    text-align: center;
+    line-height: 60px;
+    word-spacing: 30px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    width: 60%;
+    margin: 30px auto;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 6px 10px;
+    display: inline-block;
+    transition: background-color 0.3s; /* Плавное изменение фона */
+}
+
+.nav a:hover {
+    background-color: rgb(197, 45, 45);; /* Красный фон при наведении */
+    text-decoration: none; /* Убираем подчеркивание */
+    opacity: 1; /* Убираем прозрачность */
+}
+
+.nav a:active {
+    background-color: #990000;
+    color: white;
+}
+
+.story {
+    word-spacing: 2px;
+}
+
+/* Контейнер для текста и фото */
+.wrapper {
+    width: 63%;
+    margin: 100px auto 0 auto;
+    /* Убираем font-size: 0, он может создавать проблемы */
+}
+
+/* Текстовый блок - делаем его inline-block */
+.text-block {
+    color: black;
+    width: 45%; /* Ширина текстового блока */
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 80px; /* Отступ между текстом и фото */
+}
+
+.text-block h2 {
+    color: black;
+    font-size: 60px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.text-block p {
+    color: black;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Блок с фото - тоже inline-block */
+.image-block {
+    width: 45%; /* Ширина блока с фото */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.image-link {
+    display: block;
+    text-decoration: none;
+}
+
+.image-link img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+/* Стили для кнопки*/
+.button {
+    background-color: rgb(197, 45, 45); /* Красный фон */
+    border: 2px solid rgb(197, 45, 45); /* Красная рамка */
+    color: white; /* Белый текст */
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px 40px;
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer; /* Курсор-рука */
+}
+
+/* Эффект при наведении - чуть темнее */
+.button:hover {
+    background-color: #cc0000; /* Темно-красный */
+    border-color: #cc0000;
+}
+
+/* Эффект при нажатии - еще темнее */
+.button:active {
+    background-color: #990000;
+    border-color: #990000;
+}
