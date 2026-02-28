@@ -2,7 +2,7 @@ body {
   position: relative;
   background-color: F6F2F2;
   color: white;
-  z-index: 0; /* для контекста наложения */
+  z-index: 0; 
 }
 body {
     margin: 0;
@@ -29,13 +29,13 @@ body {
     font-size: 12px;
     padding: 6px 10px;
     display: inline-block;
-    transition: background-color 0.3s; /* Плавное изменение фона */
+    transition: background-color 0.3s; 
 }
 
 .nav a:hover {
-    background-color: rgb(197, 45, 45);; /* Красный фон при наведении */
-    text-decoration: none; /* Убираем подчеркивание */
-    opacity: 1; /* Убираем прозрачность */
+    background-color: rgb(197, 45, 45);; 
+    text-decoration: none; 
+    opacity: 1; 
 }
 
 .nav a:active {
@@ -47,20 +47,20 @@ body {
     word-spacing: 2px;
 }
 
-/* Контейнер для текста и фото */
+
 .wrapper {
     width: 63%;
     margin: 100px auto 0 auto;
-    /* Убираем font-size: 0, он может создавать проблемы */
+    
 }
 
-/* Текстовый блок - делаем его inline-block */
+
 .text-block {
     color: black;
-    width: 45%; /* Ширина текстового блока */
+    width: 45%;
     display: inline-block;
     vertical-align: top;
-    margin-right: 80px; /* Отступ между текстом и фото */
+    margin-right: 80px; 
 }
 
 .text-block h2 {
@@ -80,9 +80,9 @@ body {
     opacity: 0.8;
 }
 
-/* Блок с фото - тоже inline-block */
+
 .image-block {
-    width: 45%; /* Ширина блока с фото */
+    width: 45%; 
     display: inline-block;
     vertical-align: top;
 }
@@ -99,30 +99,31 @@ body {
     display: block;
 }
 
-/* Стили для кнопки*/
+
 .button {
-    background-color: rgb(197, 45, 45); /* Красный фон */
-    border: 2px solid rgb(197, 45, 45); /* Красная рамка */
-    color: white; /* Белый текст */
+    background-color: rgb(197, 45, 45); 
+    border: 2px solid rgb(197, 45, 45); 
+    color: white; 
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 700;
     font-size: 18px;
     padding: 15px 40px;
-    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    text-decoration: none; 
     display: inline-block;
     border-radius: 5px;
     transition: all 0.3s;
-    cursor: pointer; /* Курсор-рука */
+    cursor: pointer; 
 }
 
-/* Эффект при наведении - чуть темнее */
+
 .button:hover {
-    background-color: #cc0000; /* Темно-красный */
+    background-color: #cc0000; 
     border-color: #cc0000;
 }
 
-/* Эффект при нажатии - еще темнее */
+
 .button:active {
     background-color: #990000;
     border-color: #990000;
+
 }
